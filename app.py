@@ -1,5 +1,5 @@
 import streamlit as st
-from zai import ZhipuAiClient
+from zai-sdk import ZhipuAiClient
 
 # ---------- 配置 ----------
 API_KEY = st.secrets.get("API_KEY")   # 替换成你自己的
