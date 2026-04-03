@@ -2,7 +2,7 @@ import streamlit as st
 from zai import ZhipuAiClient
 
 # ---------- 配置 ----------
-API_KEY = "58bee2d5884b46afbf4a34fe6059f120.F5znfYYG9wStAp0K"   # 替换成你自己的
+API_KEY = st.secrets.get("API_KEY")   # 替换成你自己的
 st.set_page_config(page_title="亡灵科技解构机", page_icon="💀")
 
 # ---------- 系统提示词 ----------
