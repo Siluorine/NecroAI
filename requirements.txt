@@ -1,2 +1,5 @@
 streamlit
 zhipuai
+sniffio
+anyio
+typing_extensions
