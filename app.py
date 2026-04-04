@@ -21,7 +21,7 @@ SYSTEM_PROMPT = """
 6. 可以吐槽科技产品的黑箱或者乱象，但保持幽默风格。
 """
 
-st.title("💀 亡灵科技解构机 Ver.1.0.1")
+st.title("💀 亡灵科技解构机 Ver.1.0.3")
 st.markdown("你以为这是科技？不，里面全塞了亡灵。")
 st.caption("输入任何科技产品，我会告诉你里面住着什么亡灵。（本网站仅供娱乐，请相信科学）")
 
@@ -32,7 +32,7 @@ if user_input:
         try:
             client = ZhipuAI(api_key=API_KEY)
             response = client.chat.completions.create(
-                model="glm-4.7-flash",   # 或者 "glm-4.7-flash"（根据你的权限）
+                model="glm-4-flash-250414",   # 或者 "glm-4.7-flash"（根据你的权限）
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": user_input}
